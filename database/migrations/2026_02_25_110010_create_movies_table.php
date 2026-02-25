@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string("title");
             $table->integer("length");
-            $table->string("genere");
+            $table->string("genre");
             $table->timestamps();
         });
     }

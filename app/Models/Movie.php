@@ -6,13 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Movie extends Model
 {
-    protected $fillable = ["title","lenght","genre"];
+    protected $fillable = ["title","length","genre"];
 
     public function ratings()
     {
         return $this-> hasMany(Rating::class);
 
-        
+
     }
 }
 
