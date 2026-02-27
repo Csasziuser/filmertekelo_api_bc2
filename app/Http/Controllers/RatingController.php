@@ -12,7 +12,8 @@ class RatingController extends Controller
      */
     public function index()
     {
-        //
+        $ertekelesek = Rating::with('movie')->get();
+        return response()->json($ertekelesek,200,options:JSON_UNESCAPED_UNICODE);
     }
 
     /**
